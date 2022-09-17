@@ -18,7 +18,7 @@ public class Despesas {
 		double valorDespesas = sc1.nextDouble(); 
 		System.out.println("Digite o valor de tudo pago em dinheiro");
 		double tudoEmDinheiro = sc1.nextDouble();
-		System.out.println("Digite o valor de tudo pago em cartão");
+		System.out.println("Digite o valor de tudo pago em cartão "); 
 		double tudoEmCartao = sc1.nextDouble();
 		
 		double totalDespesas= tudoEmDinheiro + tudoEmCartao + valorDespesas;
