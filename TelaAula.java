@@ -2,8 +2,6 @@ package projeto_teste01;
 
 import java.util.Scanner;
 
-import com.sun.java.swing.action.ExitAction;
-
 public class TelaAula {
 	public static void main(String[] args) {
 

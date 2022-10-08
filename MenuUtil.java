@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class MenuUtil {
 	static Scanner sc1 = new Scanner(System.in);
-
+	
 	public static void mostrarOpcoesMenu() {
 		System.out.println("Digite um númnero para escolher a opcao");
 		System.out.println("1 - IMC");
@@ -26,26 +26,6 @@ public class MenuUtil {
 		System.out.println("7 - Par ou ímpar");
 		System.out.println("8 - Pedra, papel, tesoura");
 		System.out.println("0 - Sair");
-	}
-
-	public static void fazerImc() {
-		System.out.println("Informe sua massa");
-		double massa = sc1.nextDouble();
-		System.out.println("Informe sua altura");
-		double altura = sc1.nextDouble();
-
-		double imc;
-		imc = massa / (altura * altura);
-		System.out.println("O seu IMC é " + imc + ".");
-		if (imc < 18.5) {
-			System.out.println("seu índice é: Magreza.");
-		} else if (imc >= 18.5 && imc < 24.9) {
-			System.out.println("Seu índice é: Normal.");
-		} else if (imc >= 24.9 && imc < 30) {
-			System.out.println("Seu índice é: Sobrepeso.");
-		} else if (imc > 30) {
-			System.out.println("Seu índice é: Obesidade");
-		}
 	}
 
 	public static void fazerTabuada() {
@@ -65,7 +45,7 @@ public class MenuUtil {
 	}
 
 	public static void calcularFrete() {
-		System.out.println("Digite sua localidade /(AM, SP, RJ, BA OU GO./)");
+		System.out.println("Digite sua localidade (AM, SP, RJ, BA OU GO.)");
 		String uf = sc1.next();
 
 		switch (uf) {
@@ -124,7 +104,7 @@ public class MenuUtil {
 
 			case 1:
 				System.out.println("IMC");
-				fazerImc();
+				IMC.fazerIMC();
 				break;
 
 			case 2:
@@ -143,6 +123,7 @@ public class MenuUtil {
 
 			case 5:
 				System.out.println("Calcular formas");
+				FormasGeometricas.calcularFormaGeo();
 				break;
 
 			case 6:
@@ -152,6 +133,7 @@ public class MenuUtil {
 
 			case 7:
 				System.out.println("Par ou ímpar");
+				
 				break;
 
 			case 8:
